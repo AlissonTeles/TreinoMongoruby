@@ -6,6 +6,9 @@ class TesteMongosController < ApplicationController
     @teste_mongos = TesteMongo.all
   end
 
+  def login
+  end
+
   # GET /teste_mongos/1 or /teste_mongos/1.json
   def show
   end

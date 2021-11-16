@@ -1,0 +1,32 @@
+<%= form_with(model: testemongos123) do |form| %>
+  <% if testemongos123.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(testemongos123.errors.count, "error") %> prohibited this testemongos123 from being saved:</h2>
+
+      <ul>
+        <% testemongos123.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :user %>
+    <%= form.text_field :user %>
+  </div>
+
+  <div class="field">
+    <%= form.label :password %>
+    <%= form.text_field :password %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

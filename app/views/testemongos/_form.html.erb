@@ -1,23 +1,22 @@
 <%= form_with do |form| %>
-  
+<main class="form-signin">
 
-  <div class="form-floating">
-    <%= form.label :username , class: "form-control"%>
-    <%= form.text_field :username %>
+  <div class="form-control">
+    <%= form.label :user %>
+    <%= form.text_field :user %>
   </div>
-  <div class="form-floating">
+  <div class="form-control">
     <%= form.label :email %>
     <%= form.text_field :email %>
   </div>
 
-  <div class="form-floating">
+  <div class="form-control">
     <%= form.label :password %>
     <%= form.text_field :password %>
   </div>
 
-
-
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit texto_que_muda, class:"btn-btn primary" %>
   </div>
+</main>
 <% end %>
